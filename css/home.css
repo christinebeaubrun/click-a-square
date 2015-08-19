@@ -1,15 +1,23 @@
 .square {
-  border-style: solid;
-  border-color: grey;
-  margin: 10px;
+  width: 90px;
+  height: 90px;
   display: inline-block;
 }
+
+.name-number {
+  display: inline-block;
+  line-height: 85px;
+  width: 100%;
+  text-align: center;
+}
+
 .navbar-inverse {
   color: white;
   text-align: center;
 }
-#square-container {
-  min-height: 500px;
-  width: 535px;
+#squares-container {
+  height: 362px;
+  width: 362px;
   margin-left: 375px;
+  border: 1px solid grey;
 }

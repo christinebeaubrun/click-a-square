@@ -13,7 +13,7 @@ var Square = React.createClass({
     var divStyle = {
       backgroundColor: me.state.color
     };
-    return (<button role="button" className="square btn btn-default btn-lg" style={divStyle} onClick={me.changeColor}>{num}</button>);
+    return (<div className="square" style={divStyle} onClick={me.changeColor}><span className="name-number">{num}</span></div>);
   }
 });
 
@@ -26,7 +26,7 @@ var SquareContainer = React.createClass({
       return (<Square name={stats.name} key={stats.name}/>);
     });
 
-    return (<div id="square-container">{squares}</div>);
+    return (<div id="squares-container">{squares}</div>);
   }
 });
 
@@ -41,22 +41,22 @@ var ColorSquareFactory = React.createClass({
 });
 
 var DATA = [
-  {name: 'Button 1'},
-  {name: 'Button 2'},
-  {name: 'Button 3'},
-  {name: 'Button 4'},
-  {name: 'Button 5'},
-  {name: 'Button 6'},
-  {name: 'Button 7'},
-  {name: 'Button 8'},
-  {name: 'Button 9'},
-  {name: 'Button 10'},
-  {name: 'Button 11'},
-  {name: 'Button 12'},
-  {name: 'Button 13'},
-  {name: 'Button 14'},
-  {name: 'Button 15'},
-  {name: 'Button 16'}
+  {name: '1'},
+  {name: '2'},
+  {name: '3'},
+  {name: '4'},
+  {name: '5'},
+  {name: '6'},
+  {name: '7'},
+  {name: '8'},
+  {name: '9'},
+  {name: '10'},
+  {name: '11'},
+  {name: '12'},
+  {name: '13'},
+  {name: '14'},
+  {name: '15'},
+  {name: '16'}
 ];
 
 React.render(
