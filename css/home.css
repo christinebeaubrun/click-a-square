@@ -1,0 +1,15 @@
+.square {
+  border-style: solid;
+  border-color: grey;
+  margin: 10px;
+  display: inline-block;
+}
+.navbar-inverse {
+  color: white;
+  text-align: center;
+}
+#square-container {
+  min-height: 500px;
+  width: 535px;
+  margin-left: 375px;
+}
